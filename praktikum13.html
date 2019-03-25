@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>praktikum 3</title>
+
+       <script  languge="javascript">
+           
+           function radio_box() {
+               var ket=""; 
+               if(frradio.jnskel.checked== true ){
+                   ket="wanita";
+               }else{
+                   ket="pria";
+
+               }
+                alert('anda adalah seorang')   ;
+           }
+           function check_box() {
+               var ket="";
+               var ket1="";
+               
+               if(frchek.bola.checked== true) {
+                   ket="nonton bola";
+               }
+               if (frheck .tv.checked == true) {
+                   ket1="nonton tv";
+               
+               }
+               alert('hobby anda'+ket+''+ket1);
+           }
+           </script>
+           </head>
+           <body>
+               
+            <from name="frradio">
+                <h3>memasukkan data dengan objek radio</h3><hr>
+               
+                <p ><input type="radio" value="wanita" name="jnskel">wanita</p>
+                <hr>
+                <p><input type="button " value="confirm" onclick="radio_box ()">
+                    <input type="reset" value="reset"></p>
+                    </from>
+
+                    <hr>
+
+                    <from name="frheck">
+                        <h3>memasukkan data dengan objek checkbox</h3><hr>
+                        <p>hobby anda :
+                            <input type="checkbox "value="on" name="bola">nonton sepak bola
+                            <input type="checkbox" value="on" name="tv">nonton televisi</p>
+                            <hr>
+                            <p><input type="button" value="confirm" onclick="radio_box ()">
+                                <input type="reset" value="reset"></p>
+                            </from>
+                            
+                       </body>
+</html>   
+<!--pilih hoby-->

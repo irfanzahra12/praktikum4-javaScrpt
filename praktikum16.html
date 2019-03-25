@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>praktikum 6</title>
+    
+        <script>
+            var vid_user ,vpassword, vilev_user;
+
+            function login () {
+                vid_user=(frlogin.txtidusername .value);
+                vpassword=(frlogin.txtpass.value);
+
+                vlev_user=(frlogin.cblevuser.value);
+
+                if(vid_user == "") {
+                    window.alert("ID user belum diisi");
+                    frlogin. txtidusername ();
+
+                    return false;
+                }else if (vpassword =="") {
+                    window.alert("password belum diisi  ") ;
+                        frlogin.txtpass.focus();
+
+                        return false;
+                    }else if(vlev_user == "") {
+                        window.alert("level user belum diisi");
+
+
+                        return false;
+                    }else{
+                        window.alert("anda login sebagai"+vlev_user);
+                    }
+                    return true;
+                }
+                </script>  
+                </head>
+            <body>
+                <from name="frlogin" method="post"  action="" target="" onsumbit="return login()">
+                  <table align="center">   
+                      <tr>
+                        <td>
+                            <fieldset>
+                                <legend>login system</legend>
+                                <label for="txtiduser">ID.user</label><br> 
+                                <input type="text" id="txtiduser" size="35" placeholder="id.user"><br>
+                                <label  for="txtpass">password</label><br>                           
+                                <input type="password" id="txtpass" size="35" placeholder="password"><br>
+                                <label for="cblevuser"></label><br>
+                                <select name=cblevuser style="width:100%">
+                                    <option value="">--pilih Level user --</option>
+                                    <option value="administrator">administrator</option>
+                                    <option value="user">user</option>
+                                    </select><br><br>
+                                    <input type="sumbit" value="login">&nbsp;<input type="reset" value="batal">
+                                    </fieldset>
+                                    </tr>
+                                </td>
+                                </table>
+                                </from>
+                        </body>
+                        </html>        
+<!--taq login sebagai level user-->
+
+    

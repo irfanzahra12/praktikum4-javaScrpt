@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>praktikum 5</title>
+        </head>
+        <body>
+            <script >
+                var mincar=5;
+                pols_username=/^[a-zA-zO-9\_\-][8,100]$/;
+                 pola_email=/^[a-zA-zO-9._ -] +\.[a-za-z] [2,4] $/;
+
+                 function alidasi_input () {
+                     if(frregistrani.txtiduser.value =="") {
+                         alert("ID.user.kosong!");
+                       frregistrasi .txtiduser.focus();
+                       return(false);
+                     }
+
+        
+                      if(frregistrasi.txtduser.valueg.length <mincar) {
+                          alert ("ID.user minimal 5 karakter") ;
+                          frregistrasi.txtiduser.focus();
+                          return (false) ;
+                      }
+
+                      if(!pola_username.test(frregistrasi.txtusername.value)) {
+                          alert('username minimal 8 karakter dan hanya boleh Huruf atau Angka!');
+                          frregistrasi.txtusername.focus();
+                          return false;
+                      } 
+                          if(frregistrasi.txtpass.value==""){
+                          alert('password harus diisi' );
+                          frregistrasi.txtpass.focus();
+                          return false;
+                          }
+                          if(!pola_email.test(frregistrasi.txtemail.value)) {
+                              alert('pemulisan email tidak benar')
+                              frregistrasi.txtemail.focus();
+                              return false;
+                          }
+                          return(true);
+                 }
+                 </script>
+                 </head>
+                 
+                <body>
+
+                    <from name="frregistrasi" method="post" action="" target="" onsumbit="return validasi_input ()">
+
+                    <table align ="center">
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>from Registrasi</legend>
+                                    <label for="ID user">ID.user</label><br>
+                                    <label for="txtiduser"size="35"placeholder="ID user"><br>
+                                        <input type="username">username</label><br>
+                                        <input type="text"  name="txtusername" size="35" placeholder="username"><br>
+                                    <label for="txtpass">password</label>
+                                    <label type="password" name="txtpass">password</label><br>
+                                    <input type="password"name="txtpass" size="35" placeholder="password"><br>
+                                    <label for="txtemail">Email</label><br>
+                                    <input type="email" name="txtemail" size=" 35" placeholder="email"><br>
+                                    <hr>
+                                    <input type="sumbit" value="login">&nbsp;<input type="reset" value="batal">
+                                    </fieldset>
+                                     </td>
+                                       </tr>
+                                        </table>
+                                           </from>
+                                    </body>
+                                  
+                                    </html> 
+
+                                      
+                                    
+<!--taq memasukan registrasi-->
+                          
+
+
+                

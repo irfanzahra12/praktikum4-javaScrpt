@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>praktikum 7</title>
+    </head>
+    <body>
+        <script language="javaScript">
+            var vnama,vtujuan ,vjumlahtiket;
+            var vth=0.0;
+            var vsub=0.0;
+            var vdiskon=0.0;
+             var vtotal=0.0;
+           
+            function hitungtotal() {
+                vnama=(ffrom.inama.value);
+                vtujuan=(ffrom.itujuan.value);
+                vjumlahtiket=parseFloat(ffrom.ijumlah.value);
+                if(vtujuan =="jakarta") {
+                    vth=100000;
+                }else  if(vtujuan == "cirebon") {
+                    vth=150000;
+                }else{
+                    vth=20000;
+                }
+                vsub=vjumlahtiket * vth;
+
+                if (ffrom.imember.checked== true) {
+                    vdiskon=0.10;
+                }else{
+                    vdiskon=0.0;
+                }
+
+                vtotal =vsub-vdiskon;
+                ffrom.otiket.value==eval(vtht);
+                ffrom.osub.value==eval(vsub);
+                ffrom .odiskon.value==eval (vdiskon);
+                ffrom.ototal.value==eval(vtotal) ;
+            }
+            </script>
+            <from name="ffrom">
+             <table border="1" align="center" width="40%">
+                 <tr>
+                     <td width="100%" colsplan="2"><h2 align="center">Travel Bintang Abadi</h2></td>
+                     </tr>
+
+                     <tr>
+                         <td width="50">
+
+                            nama<br>
+                            <input type="test" name="inama" style="width:100%">
+                            
+                            tujuan<br>
+                            <select name="itujuan" style="width:100%">
+                                <option value="">--pilih--</option>
+                                <option value="jakarta">jakarta</option>
+                                <option value="cirebon">cirebon</option>
+                                <option value="Tasikmalaya">tasikmalaya</option>
+                                </select><br>
+
+                                jumlah tiket<br>
+                                <input type="checbox"name="ijumlah" style="width:100%"><br>
+
+                                member<br>
+                                <input type="checkbox" name="imember">ya
+
+                                </td>
+
+                                <td width="50%">
+                                 
+                                    harga tiket<br>
+                                    <input type="text" name="otiket" style="width:100%"><br>
+
+                                    sub total<br>
+                                    <input type="text" name="osub" style="width:100%"><br>
+
+                                    diskon <br>
+                                    <input type="text" name="odiskon" style="width:100%"><br>
+
+                                    total bayar<br>
+                                    <input type="text" name="ototal"style="width:100%">
+
+                                    </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td width="100%" colspan="2">
+                                            <center>
+                                                <input type="button" value="hitung" onclick="hitungtotal()">
+                                                <input  type="reset" value="ulang">
+                                            </center>
+                                                </td>
+                                              </tr>
+                                                   </table>
+                                                </from>
+                                             </body>
+                                     </html>       
+
+
+
+                 <!--tag memasukan tiket-->
+                 <!--taq harga tiket-->
+
+
